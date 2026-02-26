@@ -204,7 +204,6 @@ window.dialogue_polarBear=function(player,items,NPCs){
         ]
     }
 
-    return 
 }
 
 window.dialogue_polarBear_beesmas=function(player,items){
