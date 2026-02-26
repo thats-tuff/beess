@@ -527,7 +527,7 @@ window.playerGear={
                 stats.bluePollen*=1000
                 stats.whitePollen*=1000
                 stats.redPollen*=1000
-                stats.jumpPower*=3
+                stats.jumpPower*=0.8
                 stats.redBeeAbilityRate*=1000
                 stats.blueBeeAbilityRate*=1000
                 stats.whiteBeeAbilityRate*=1000
@@ -537,10 +537,10 @@ window.playerGear={
                 stats.honeyFromTokens*=100
                 stats.convertRate*=100
                 player.addEffect('coinScatterPassive')
-                stats.instantRedConversion=window.applyPercentage(stats.instantRedConversion,0.2)
-                stats.instantFlameConversion=window.applyPercentage(stats.instantFlameConversion,0.5)
+                stats.instantRedConversion=window.applyPercentage(stats.instantRedConversion,10)
+                stats.instantFlameConversion=window.applyPercentage(stats.instantFlameConversion,10)
                 player.addEffect('ignitePassive')
-                stats.instantWhiteConversion=window.applyPercentage(stats.instantWhiteConversion,0.25)
+                stats.instantWhiteConversion=window.applyPercentage(stats.instantWhiteConversion,10)
                 player.addEffect('gummyMorphPassive')
                 stats.redFieldCapacity*=100
                 stats.blueFieldCapacity*=100
@@ -553,7 +553,7 @@ window.playerGear={
                 stats.lootLuck*=100
                 stats.whiteBombPollen*=1.3
                 stats.beeEnergy*=1.15
-                stats.instantBlueConversion=window.applyPercentage(stats.instantBlueConversion,0.05)   
+                stats.instantBlueConversion=window.applyPercentage(stats.instantBlueConversion,10)   
                 player.addEffect('petalStormPassive')
                 player.addEffect('inspireCoconutsPassive')
                 player.addEffect('emergencyCoconutShieldPassive')
@@ -919,9 +919,49 @@ window.playerGear={
             
             applyStats:function(stats,player){
                 
-                stats.capacity+=100000
-                stats.lootLuck*=1.5
-                stats.convertRate*=1.5
+              stats.bluePollen*=1000
+                stats.whitePollen*=1000
+                stats.redPollen*=1000
+                stats.jumpPower*=0.8
+                stats.redBeeAbilityRate*=1000
+                stats.blueBeeAbilityRate*=1000
+                stats.whiteBeeAbilityRate*=1000
+                stats.defense+=1000000 
+                stats.capacityMultiplier*=100
+                stats.pollenFromBees*=100
+                stats.honeyFromTokens*=100
+                stats.convertRate*=100
+                player.addEffect('coinScatterPassive')
+                stats.instantRedConversion=window.applyPercentage(stats.instantRedConversion,10)
+                stats.instantFlameConversion=window.applyPercentage(stats.instantFlameConversion,10)
+                player.addEffect('ignitePassive')
+                stats.instantWhiteConversion=window.applyPercentage(stats.instantWhiteConversion,10)
+                player.addEffect('gummyMorphPassive')
+                stats.redFieldCapacity*=100
+                stats.blueFieldCapacity*=100
+                stats.whiteFieldCapacity*=100
+                player.addEffect('diamondDrainPassive')
+                player.addEffect('bubbleBombsPassive')
+                stats.flamePollen*=20
+                player.addEffect('xFlamePassive')
+                player.addEffect('ignitePassive')
+                stats.lootLuck*=100
+                stats.whiteBombPollen*=1.3
+                stats.beeEnergy*=1.15
+                stats.instantBlueConversion=window.applyPercentage(stats.instantBlueConversion,10)   
+                player.addEffect('petalStormPassive')
+                player.addEffect('inspireCoconutsPassive')
+                player.addEffect('emergencyCoconutShieldPassive')
+                stats.goo*=10
+                stats.beeSpeed*=10
+                player.addEffect('coconutHastePassive')
+                stats.movementCollection+=1210000000
+                stats.criticalChance+=50
+                stats.criticalPower+=50
+                stats.redBombPollen*=10
+                stats.blueBombPollen*=10
+                player.addEffect('focusPulserPassive')
+                player.addEffect('hastePulserPassive')
             },
             desc:'A highly-embellished belt bag imported from a lost land, as big as a tambourine.<br><br>+100,000 capacity<br>x1.5 loot luck<br>x1.5 convert rate',
             cost:['10 honey'],
