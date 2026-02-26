@@ -64,7 +64,7 @@ window.dialogue_blackBear=function(player,items){
         player.updateInventory()
     }
 
-    return ["Hi, I'm Black Bear, and I'm a bear(if you couldn't tell)! I give you quests, rewards, and information about the game so you can progress!","Here's your first quest! Once you're done, come back and we'll talk!",function(){player.addQuest('Sunflower Start',[['pollenFromSunflowerField',100]],'blackBear');},"Wow! You did it! Now here's your rewards:",function(){addReward([['honey',100000000000000000000000000000000000],['starTreat', 100000],['atomicTreat', 100000],['neonberry', 1000000],['royalJelly', 1000000],['starJelly', 100000],['translator', 10000],['magicBean', 100000],['bitterBerry', 100000],['giftedMythicEgg',1000])},
+    return ["Hi, I'm Black Bear, and I'm a bear(if you couldn't tell)! I give you quests, rewards, and information about the game so you can progress!","Here's your first quest! Once you're done, come back and we'll talk!",function(){player.addQuest('Sunflower Start',[['pollenFromSunflowerField',100]],'blackBear');},"Wow! You did it! Now here's your rewards:",function(){addReward([['honey',100000000000000000000000000000000000],['starTreat', 100000],['atomicTreat', 100000],['neonberry', 1000000],['royalJelly', 1000000],['starJelly', 100000],['translator', 10000],['magicBean', 100000],['bitterBerry', 100000],['giftedMythicEgg',1000])}],
   
 }
 
