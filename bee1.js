@@ -462,6 +462,12 @@ window.playerGear={
             cost:['500000 honey'],
         },
 
+        stats = {
+        applyStats:function(stats,player){
+        capacity=200
+        },
+        },
+
         glider:{
             
             mesh:function(box,cylinder,sphere,star,applyFinalRotation){
