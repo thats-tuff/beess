@@ -863,7 +863,7 @@ window.playerGear={
     belt:{
         
         none:{mesh:function(){},applyStats:function(stats,player){
-                player.capacity+=10000000 
+                stats.capacity+=10000000 
                 stats.bluePollen*=1000
                 stats.whitePollen*=1000
                 stats.redPollen*=1000
