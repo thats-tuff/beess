@@ -863,6 +863,7 @@ window.playerGear={
     belt:{
         
         none:{mesh:function(){},applyStats:function(stats,player){
+                player.capacity+=10000000 
                 stats.bluePollen*=1000
                 stats.whitePollen*=1000
                 stats.redPollen*=1000
@@ -906,7 +907,7 @@ window.playerGear={
                 stats.blueBombPollen*=10
                 player.addEffect('focusPulserPassive')
                 player.addEffect('hastePulserPassive')
-                stats.capacity+=10000000
+                
         }},
 
         beltPocket:{
@@ -983,7 +984,7 @@ window.playerGear={
                 stats.blueBombPollen*=10
                 player.addEffect('focusPulserPassive')
                 player.addEffect('hastePulserPassive')
-                stats.capacity+=10000000
+                player.capacity+=10000000
             },
             desc:'A convenient pouch designed for easy access.<br><br>+25,000 capacity<br>x1.25 loot luck<br>x1.3 convert rate<br>x1.15 bee speed',
             cost:['10 honey'],
@@ -1048,7 +1049,7 @@ window.playerGear={
                 stats.blueBombPollen*=10
                 player.addEffect('focusPulserPassive')
                 player.addEffect('hastePulserPassive')
-                stats.capacity+=10000000
+                player.capacity+=10000000
             },
             desc:'A highly-embellished belt bag imported from a lost land, as big as a tambourine.<br><br>+100,000 capacity<br>x1.5 loot luck<br>x1.5 convert rate',
             cost:['10 honey'],
@@ -1112,7 +1113,7 @@ window.playerGear={
                 stats.blueBombPollen*=10
                 player.addEffect('focusPulserPassive')
                 player.addEffect('hastePulserPassive')
-                stats.capacity+=10000000
+                player.capacity+=10000000
             },
             desc:'A luxurious faux honeycomb you can wear as a belt to greatly enhance your pollen capacity.<br><br>+200,000 capacity<br>x1.75 capacity<br>x1.75 loot luck<br>x1.75 convert rate<br>x1.5 honey from tokens<br>+1 white bee attack<br>x1.3 white bomb pollen<br>x1.15 bee energy',
             cost:['10 honey'],
@@ -1176,7 +1177,7 @@ window.playerGear={
                 stats.blueBombPollen*=10
                 player.addEffect('focusPulserPassive')
                 player.addEffect('hastePulserPassive')
-                stats.capacity+=10000000
+                player.capacity+=10000000
             },
             desc:'Drape these petals about your waist to harness unlimited flower power.<br><br>+300,000 capacity<br>x2 capacity<br>x2 loot luck<br>x1.8 convert rate<br>x1.5 honey from tokens<br>+2 white bee attack<br>x1.5 white bomb pollen<br>x1.25 bee energy<br>+Passive: Petal Storm',
             cost:['10 honey'],
