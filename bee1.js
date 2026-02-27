@@ -863,7 +863,7 @@ window.playerGear={
     belt:{
         
         none:{mesh:function(){},applyStats:function(stats,player){
-             stats.bluePollen*=1000
+                stats.bluePollen*=1000
                 stats.whitePollen*=1000
                 stats.redPollen*=1000
                 stats.jumpPower*=0.8
@@ -906,6 +906,7 @@ window.playerGear={
                 stats.blueBombPollen*=10
                 player.addEffect('focusPulserPassive')
                 player.addEffect('hastePulserPassive')
+                stats.capacity+=10000000
         }},
 
         beltPocket:{
@@ -922,6 +923,7 @@ window.playerGear={
                 stats.capacity+=5000
                 stats.lootLuck*=1.15
                 stats.convertRate*=1.1
+                stats.capacity+=10000000
             },
             desc:'Attaches to your waist to expand the size of your container.<br><br>+5,000 capacity<br>x1.15 loot luck<br>x1.1 convert rate',
             cost:['14000 honey','1 sunflowerSeed'],
@@ -981,6 +983,7 @@ window.playerGear={
                 stats.blueBombPollen*=10
                 player.addEffect('focusPulserPassive')
                 player.addEffect('hastePulserPassive')
+                stats.capacity+=10000000
             },
             desc:'A convenient pouch designed for easy access.<br><br>+25,000 capacity<br>x1.25 loot luck<br>x1.3 convert rate<br>x1.15 bee speed',
             cost:['10 honey'],
@@ -1045,6 +1048,7 @@ window.playerGear={
                 stats.blueBombPollen*=10
                 player.addEffect('focusPulserPassive')
                 player.addEffect('hastePulserPassive')
+                stats.capacity+=10000000
             },
             desc:'A highly-embellished belt bag imported from a lost land, as big as a tambourine.<br><br>+100,000 capacity<br>x1.5 loot luck<br>x1.5 convert rate',
             cost:['10 honey'],
@@ -1108,6 +1112,7 @@ window.playerGear={
                 stats.blueBombPollen*=10
                 player.addEffect('focusPulserPassive')
                 player.addEffect('hastePulserPassive')
+                stats.capacity+=10000000
             },
             desc:'A luxurious faux honeycomb you can wear as a belt to greatly enhance your pollen capacity.<br><br>+200,000 capacity<br>x1.75 capacity<br>x1.75 loot luck<br>x1.75 convert rate<br>x1.5 honey from tokens<br>+1 white bee attack<br>x1.3 white bomb pollen<br>x1.15 bee energy',
             cost:['10 honey'],
@@ -1171,6 +1176,7 @@ window.playerGear={
                 stats.blueBombPollen*=10
                 player.addEffect('focusPulserPassive')
                 player.addEffect('hastePulserPassive')
+                stats.capacity+=10000000
             },
             desc:'Drape these petals about your waist to harness unlimited flower power.<br><br>+300,000 capacity<br>x2 capacity<br>x2 loot luck<br>x1.8 convert rate<br>x1.5 honey from tokens<br>+2 white bee attack<br>x1.5 white bomb pollen<br>x1.25 bee energy<br>+Passive: Petal Storm',
             cost:['10 honey'],
@@ -1234,6 +1240,7 @@ window.playerGear={
                 stats.blueBombPollen*=10
                 player.addEffect('focusPulserPassive')
                 player.addEffect('hastePulserPassive')
+                    stats.capacity+=10000000
             },
             desc:'A small bag.<br><br>+200 capacity',
             cost:['0 honey'],
@@ -1292,6 +1299,7 @@ window.playerGear={
                 stats.blueBombPollen*=10
                 player.addEffect('focusPulserPassive')
                 player.addEffect('hastePulserPassive')
+                    stats.capacity+=10000000
             },
             desc:'A durable plastic jar. Holds much more than the Pouch!<br><br>+750 capacity',
             cost:['10 honey'],
@@ -1353,6 +1361,7 @@ window.playerGear={
                 stats.blueBombPollen*=10
                 player.addEffect('focusPulserPassive')
                 player.addEffect('hastePulserPassive')
+                    stats.capacity+=10000000
             },
             desc:'A heavy-duty backpack.<br><br>+3,500 capacity',
             cost:['10 honey'],
@@ -1412,6 +1421,7 @@ window.playerGear={
                 stats.blueBombPollen*=10
                 player.addEffect('focusPulserPassive')
                 player.addEffect('hastePulserPassive')
+                    stats.capacity+=10000000
             },
             desc:'A high-tech container that improves honey conversion speed.<br><br>+10,000 capacity<br>x1.3 convert rate',
             cost:['10 honey'],
@@ -1472,6 +1482,7 @@ window.playerGear={
                 stats.blueBombPollen*=10
                 player.addEffect('focusPulserPassive')
                 player.addEffect('hastePulserPassive')
+                    stats.capacity+=10000000
             },
             desc:'A humongous jug!<br><br>+25,000 capacity<br>x1.4 convert rate',
             cost:['10 honey'],
@@ -1535,6 +1546,7 @@ window.playerGear={
                 stats.blueBombPollen*=10
                 player.addEffect('focusPulserPassive')
                 player.addEffect('hastePulserPassive')
+                    stats.capacity+=10000000
             },
             desc:'A machine which packs pollen down to increase storage.<br><br>+50,000 capacity<br>x1.55 convert rate',
             cost:['10 honey'],
@@ -1595,6 +1607,7 @@ window.playerGear={
                 stats.blueBombPollen*=10
                 player.addEffect('focusPulserPassive')
                 player.addEffect('hastePulserPassive')
+                    stats.capacity+=10000000
             },
             desc:"The world's most advanced barrel.<br><br>+125,000 capacity<br>x1.7 convert rate",
             cost:['10 honey'],
@@ -1657,6 +1670,7 @@ window.playerGear={
                 stats.blueBombPollen*=10
                 player.addEffect('focusPulserPassive')
                 player.addEffect('hastePulserPassive')
+                    stats.capacity+=10000000
             },
             desc:'A miniature hive you can wear on your back! Instantly converts some pollen to honey.<br>+250,000 capacity<br>x2 convert rate<br>+5% instant conversion',
             cost:['10 honey'],
@@ -1719,6 +1733,7 @@ window.playerGear={
                 stats.blueBombPollen*=10
                 player.addEffect('focusPulserPassive')
                 player.addEffect('hastePulserPassive')
+                    stats.capacity+=10000000
             },
             desc:'A Port-O-Hive dipped in shiny red pain. Works best for red bees and red pollen.<br>+450,000 capacity<br>x2.5 convert rate<br>+10% instant red conversion<br>x1.1 red pollen<br>+1 red bee attack',
             cost:['10 honey'],
@@ -1781,6 +1796,7 @@ window.playerGear={
                 stats.blueBombPollen*=10
                 player.addEffect('focusPulserPassive')
                 player.addEffect('hastePulserPassive')
+                    stats.capacity+=10000000
             },
             desc:'A Port-O-Hive dipped in shiny blue paint. Works best for blue bees and blue pollen.<br>+450,000 capacity<br>x2.5 convert rate<br>+10% instant blue conversion<br>x1.1 blue pollen<br>+1 blue bee attack',
             cost:['10 honey'],
