@@ -4,53 +4,6 @@
     return (x-1)*(1-m)+1
 }
 
-   
-function initializePlayerStats(stats) {
-   
-    stats.capacity = 200;        
-    stats.bluePollen = 1;
-    stats.redPollen = 1;
-    stats.whitePollen = 1;
-    stats.jumpPower = 1;
-    stats.redBeeAbilityRate = 1;
-    stats.blueBeeAbilityRate = 1;
-    stats.whiteBeeAbilityRate = 1;
-    stats.defense = 0;
-    stats.capacityMultiplier = 1;
-    stats.pollenFromBees = 1;
-    stats.honeyFromTokens = 1;
-    stats.convertRate = 1;
-    stats.convertRateAtHive = 1;
-    stats.instantRedConversion = 0;
-    stats.instantBlueConversion = 0;
-    stats.instantWhiteConversion = 0;
-    stats.instantFlameConversion = 0;
-    stats.redFieldCapacity = 1;
-    stats.blueFieldCapacity = 1;
-    stats.whiteFieldCapacity = 1;
-    stats.flamePollen = 1;
-    stats.lootLuck = 1;
-    stats.whiteBombPollen = 1;
-    stats.beeEnergy = 1;
-    stats.petalStormPassive = false;
-    stats.emergencyCoconutShieldPassive = false;
-    stats.goo = 1;
-    stats.beeSpeed = 1;
-    stats.movementCollection = 0;
-    stats.criticalChance = 0;
-    stats.criticalPower = 0;
-    stats.redBombPollen = 1;
-    stats.blueBombPollen = 1;
-    stats.beeAttack = 1;
-    stats.whiteBeeAttack = 0;
-    stats.redBeeAttack = 0;
-    stats.blueBeeAttack = 0;
-    stats.pollenFromCoconuts = 1;
-    // ...add any other stats you use...
-}
-
-    
-
 window.playerGear={
 
     sprinkler:{
@@ -548,6 +501,55 @@ window.playerGear={
                 box(0,0.5,0,0.55,0.1,0.55,false,[0,0,0])
             },applyStats:function(){}
         },
+
+
+function initializePlayerStats(stats) {
+      applyStats:function(stats,player){
+          if (!stats.capacity || stats.capacity < 1) {
+    stats.capacity = 200; // fallback in case gear failed
+}
+    stats.capacity = 200;        
+    stats.bluePollen = 1;
+    stats.redPollen = 1;
+    stats.whitePollen = 1;
+    stats.jumpPower = 1;
+    stats.redBeeAbilityRate = 1;
+    stats.blueBeeAbilityRate = 1;
+    stats.whiteBeeAbilityRate = 1;
+    stats.defense = 0;
+    stats.capacityMultiplier = 1;
+    stats.pollenFromBees = 1;
+    stats.honeyFromTokens = 1;
+    stats.convertRate = 1;
+    stats.convertRateAtHive = 1;
+    stats.instantRedConversion = 0;
+    stats.instantBlueConversion = 0;
+    stats.instantWhiteConversion = 0;
+    stats.instantFlameConversion = 0;
+    stats.redFieldCapacity = 1;
+    stats.blueFieldCapacity = 1;
+    stats.whiteFieldCapacity = 1;
+    stats.flamePollen = 1;
+    stats.lootLuck = 1;
+    stats.whiteBombPollen = 1;
+    stats.beeEnergy = 1;
+    stats.petalStormPassive = false;
+    stats.emergencyCoconutShieldPassive = false;
+    stats.goo = 1;
+    stats.beeSpeed = 1;
+    stats.movementCollection = 0;
+    stats.criticalChance = 0;
+    stats.criticalPower = 0;
+    stats.redBombPollen = 1;
+    stats.blueBombPollen = 1;
+    stats.beeAttack = 1;
+    stats.whiteBeeAttack = 0;
+    stats.redBeeAttack = 0;
+    stats.blueBeeAttack = 0;
+    stats.pollenFromCoconuts = 1;
+    // ...add any other stats you use...
+}}
+
 
         helmet:{
             
