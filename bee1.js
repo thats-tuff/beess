@@ -1,12 +1,6 @@
 (function(){
-    window.applyPercentage=function(x,m){
-    
-    return (x-1)*(1-m)+1
-}
 
-    (function(){
-   
-    window.initializePlayerStats = function(stats) {
+  window.initializePlayerStats = function(stats) {
         stats.capacity = 200;     
         stats.bluePollen = 1;
         stats.redPollen = 1;
@@ -52,6 +46,14 @@
         if (!stats.capacity || stats.capacity < 1) {
     stats.capacity = 200;
 }
+    
+    window.applyPercentage=function(x,m){
+    
+    return (x-1)*(1-m)+1
+}
+
+}
+
 
 window.playerGear={
 
