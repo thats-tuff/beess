@@ -5,9 +5,9 @@
 }
 
     (function(){
-    // ADD THIS FUNCTION RIGHT HERE:
+   
     window.initializePlayerStats = function(stats) {
-        stats.capacity = 200;           // DEFAULT starting capacity
+        stats.capacity = 200;     
         stats.bluePollen = 1;
         stats.redPollen = 1;
         stats.whitePollen = 1;
@@ -48,6 +48,10 @@
         stats.pollenFromCoconuts = 1;
         // ...add others if needed!
     }
+
+        if (!stats.capacity || stats.capacity < 1) {
+    stats.capacity = 200;
+}
 
 window.playerGear={
 
